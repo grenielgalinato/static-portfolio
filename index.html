@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Greniel Galinato - Junior Web Developer / Designer from the Philippines. Website designs, wireframes, app designs, posters and digital art.">
+  <title>Greniel Galinato | Web Developer / Designer</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- the "G" mark, reused in the logo, the hero and the icon pattern -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="g-mark" viewBox="0 0 100 100">
+      <path d="M78 26A36 36 0 1 0 84 62H56" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="g-shape" viewBox="0 0 200 200">
+      <path d="M150 52A70 70 0 1 0 160 130" fill="none" stroke="currentColor" stroke-width="34" stroke-linecap="round" />
+      <rect x="62" y="78" width="58" height="32" rx="16" transform="rotate(-30 91 94)" fill="currentColor" />
+      <rect x="66" y="112" width="40" height="24" rx="12" transform="rotate(-30 86 124)" fill="currentColor" />
+    </symbol>
+  </svg>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo" aria-label="Greniel Galinato, back to top">
+        <svg class="logo__g"><use href="#g-mark" /></svg>
+        <span class="logo__name">Greniel Galinato</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#featured">Featured Works</a>
+        <a href="#works">Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <span class="nav__social">
+          <a href="https://codepen.io/" target="_blank" rel="noopener" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+          <a href="mailto:greniel.galinato@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <svg class="hero__shape hero__shape--1" aria-hidden="true"><use href="#g-shape" /></svg>
+      <svg class="hero__shape hero__shape--2" aria-hidden="true"><use href="#g-shape" /></svg>
+      <svg class="hero__shape hero__shape--3" aria-hidden="true"><use href="#g-shape" /></svg>
+
+      <div class="hero__content">
+        <h1>I'M <span id="typed">GRENIEL</span><span class="caret" aria-hidden="true">|</span></h1>
+        <p class="hero__sub">A Junior Web Developer / Designer</p>
+        <div class="hero__btns">
+          <a href="#intro" class="btn btn--blue">Introduction <i class="fas fa-long-arrow-alt-down"></i></a>
+          <a href="#featured" class="btn btn--pink">View My Works <i class="fas fa-long-arrow-alt-down"></i></a>
+        </div>
+      </div>
+
+      <a href="#intro" class="hero__down" aria-label="Scroll to introduction"><i class="fas fa-arrow-down"></i></a>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section intro" id="intro">
+      <div class="container narrow center">
+        <h2 class="title">Greniel Portfolio</h2>
+        <h3 class="intro__welcome">Hello, welcome and thank you<br>for viewing my page</h3>
+        <p>I'm a passionate Web Developer / Designer from the Philippines. I want to help businesses, companies, or individuals by providing my skills and knowledge in Graphic Arts, Web Design, and Web Programming.</p>
+        <p>I love creating posters, layouts, user interface apps, and functional websites. Also, I want to grow in this profession and I hope I can be part of your wonderful journey.</p>
+        <p>I believe in 3 things as a Web Developer. I follow these principles even before I enter the industry.</p>
+      </div>
+
+      <div class="container values">
+        <article class="value reveal">
+          <i class="fas fa-stopwatch"></i>
+          <h4>Professionalism</h4>
+          <p>I always see to it that I'm always on time. I value time and I finish the task with utmost efficiency. I accept feedback and I work things out with a positive attitude. I am willing to learn and excel in the industry.</p>
+        </article>
+        <article class="value reveal">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h4>Honesty</h4>
+          <p>I follow on my convictions, I love solving problems and I deliver my commitments without excuses. I find solutions about the tasks at hand.</p>
+        </article>
+        <article class="value reveal">
+          <i class="fas fa-heartbeat"></i>
+          <h4>Integrity</h4>
+          <p>As I value time, I value my clients' trust. I am committed and accountable for my actions. I strive to produce high quality of work and I set aside work and personal time.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="dark quote">
+      <div class="pattern" aria-hidden="true"></div>
+      <div class="container narrow center">
+        <i class="fas fa-quote-right quote__mark" aria-hidden="true"></i>
+        <blockquote>The impediment to action advances action. What stands in the way becomes the way.</blockquote>
+        <p class="spaced">Marcus Aurelius</p>
+        <img class="quote__avatar" src="img/me-face.jpg" alt="Greniel Galinato">
+        <p class="spaced spaced--light">I persevere to be the best version of myself. I believe in the process and I take things in positive note. I am challenging myself to always believe in my dreams and to pursue them with gratefulness in my heart.</p>
+      </div>
+    </section>
+
+    <!-- WEBSITE DESIGNS -->
+    <section class="section" id="featured">
+      <div class="container">
+        <p class="kicker">Here are the screenshots of my native webpages.</p>
+        <h2 class="title">Website Designs</h2>
+        <div class="designs" id="webDesigns"></div>
+      </div>
+    </section>
+
+    <!-- CODEPEN -->
+    <section class="codepen">
+      <div class="container codepen__inner">
+        <div class="center">
+          <h2 class="title title--sm">Codepen.io</h2>
+          <p>Some of my Native Website Projects<br>are uploaded in my Codepen.io.</p>
+          <a href="https://codepen.io/" target="_blank" rel="noopener" class="codepen__icon" aria-label="Open my CodePen"><i class="fab fa-codepen"></i></a>
+        </div>
+        <img src="img/codepen.jpg" alt="Screenshot of my CodePen profile" loading="lazy" data-full data-group="codepen">
+      </div>
+    </section>
+
+    <!-- FIGMA WIREFRAMES -->
+    <section class="section" id="works">
+      <div class="container">
+        <p class="kicker">Wireframes sample created in Figma</p>
+        <h2 class="title">Website Project Sample</h2>
+
+        <div class="sample">
+          <div class="sample__text">
+            <h3 class="spaced">Travel Company Website</h3>
+            <p class="spaced spaced--small">Here is a wireframe of a travel company website: Arat.</p>
+            <a href="../66-arat/" class="btn btn--dark">See it in HTML</a>
+          </div>
+          <img src="img/figma-arat.jpg" alt="Arat wireframe in Figma" loading="lazy" data-full data-group="arat">
+        </div>
+        <div class="sample__pair">
+          <img src="img/arat-desktop.jpg" alt="Arat desktop wireframe" loading="lazy" data-full data-group="arat">
+          <img src="img/arat-mobile.jpg" alt="Arat mobile wireframe" loading="lazy" data-full data-group="arat">
+        </div>
+
+        <div class="sample">
+          <div class="sample__text">
+            <h3 class="spaced">WP Theme Website</h3>
+            <p class="spaced spaced--small">Here is a wireframe of a WordPress theme website: Paper Bags Themes.</p>
+            <a href="../67-paper-bags-themes/" class="btn btn--dark">See it in HTML</a>
+          </div>
+          <img src="img/figma-paperbags.jpg" alt="Paper Bags Themes wireframe in Figma" loading="lazy" data-full data-group="paperbags">
+        </div>
+        <div class="sample__pair">
+          <img src="img/paperbags-desktop.jpg" alt="Paper Bags Themes desktop wireframe" loading="lazy" data-full data-group="paperbags">
+          <img src="img/paperbags-mobile.jpg" alt="Paper Bags Themes mobile wireframe" loading="lazy" data-full data-group="paperbags">
+        </div>
+      </div>
+    </section>
+
+    <!-- SKETCH APPS -->
+    <section class="section section--tight">
+      <div class="container">
+        <p class="kicker">Wireframes and app design sample created in Sketch</p>
+        <h2 class="title">Apps Project Sample</h2>
+        <div id="apps"></div>
+      </div>
+    </section>
+
+    <!-- HAND DRAWN -->
+    <section class="section section--tight">
+      <div class="container">
+        <p class="kicker">These images are my hand drawn arts using a digital drawing tablet and has been edited in Adobe Illustrator</p>
+        <h2 class="title">Digital Hand Drawn<br>Designs</h2>
+        <div class="arts" id="arts"></div>
+      </div>
+    </section>
+
+    <!-- POSTERS -->
+    <section class="section section--tight">
+      <div class="container">
+        <p class="kicker">Here are my featured work as a graphic designer</p>
+        <h2 class="title">Poster &amp; Layout Designs</h2>
+        <div class="posters" id="posters"></div>
+      </div>
+    </section>
+
+    <!-- COUNTER -->
+    <section class="dark counter">
+      <div class="pattern" aria-hidden="true"></div>
+      <div class="container center">
+        <h2 class="title title--light">Here are my works as a designer</h2>
+        <p class="counter__num"><span data-count="24">0</span><sup>+</sup></p>
+        <p class="counter__label">Projects and works I created</p>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="social">
+      <div class="container social__inner">
+        <div>
+          <h2 class="title title--sm title--left">Visit my social<br>media pages</h2>
+          <p>Visit my social media pages for my arts and designs. It showcases my crafts, random stuff, and my journey being a graphic designer.</p>
+          <p><em>Sample image came from my Pinterest account.</em></p>
+          <div class="round-icons">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener" class="pin" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <img src="img/pinterest.jpg" alt="My Pinterest board" loading="lazy" data-full data-group="pinterest">
+      </div>
+    </section>
+
+    <!-- OTHER WORKS -->
+    <section class="dark others">
+      <div class="pattern" aria-hidden="true"></div>
+      <div class="container center">
+        <h2 class="title title--light">Greniel Other Works &amp;<br>Web Designs</h2>
+        <p class="spaced spaced--light">Here are my art and design works</p>
+        <p class="spaced others__hint">Click the category to view gallery</p>
+        <div class="others__grid" id="others"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="kicker">Here's a summary of my skills</p>
+        <h2 class="title">About Me &amp; Skills</h2>
+        <div class="team">
+          <article class="member member--low">
+            <img src="img/me-shirt.jpg" alt="Greniel at work" loading="lazy">
+            <h3>Myself</h3>
+            <p class="spaced spaced--small">Web Designer</p>
+            <ul class="skills" data-skills="web"></ul>
+          </article>
+          <article class="member">
+            <img src="img/me-face.jpg" alt="Portrait of Greniel" loading="lazy">
+            <h3>and I</h3>
+            <p class="spaced spaced--small">UI Designer</p>
+            <ul class="skills" data-skills="ui"></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="dark contact" id="contact">
+      <div class="pattern" aria-hidden="true"></div>
+      <div class="container contact__inner">
+        <div class="contact__text">
+          <h2 class="title title--light title--left">Contact me!</h2>
+          <p>I hope I can be part of your team, company, or your works. I'm striving to be the best version of myself, a future great web developer and designer.</p>
+          <p>Become part of my journey, I will not waste a single opportunity that you will give me.</p>
+          <p class="contact__connect">Connect</p>
+          <div class="round-icons round-icons--sm">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="in" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener" class="pin" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="mailto:greniel.galinato@gmail.com" class="mail" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <form class="form" id="form" novalidate>
+          <fieldset class="form__name">
+            <legend>Name <b>*</b></legend>
+            <label><input name="first" autocomplete="given-name"><small>First</small></label>
+            <label><input name="last" autocomplete="family-name"><small>Last</small></label>
+          </fieldset>
+          <label>Email <b>*</b><input name="email" type="email" autocomplete="email"></label>
+          <label>Subject <b>*</b><input name="subject"></label>
+          <label>Message <b>*</b><textarea name="message" rows="6"></textarea></label>
+          <p class="form__error" id="formError" hidden></p>
+          <button class="form__submit">Submit</button>
+          <p class="form__ok" id="formOk" hidden>Thank you! Your email app should open with the message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a href="#home" class="logo" aria-label="Greniel Galinato, back to top">
+        <svg class="logo__g"><use href="#g-mark" /></svg>
+        <span class="logo__name">Greniel Galinato</span>
+      </a>
+      <div>
+        <h4>Why choose me?</h4>
+        <p>I'm passionate about what I do. With my knowledge, skills, and willingness to grow, I can be an asset to your future works and projects.</p>
+        <a href="#contact" class="footer__link">Contact me now!</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Pasig City, Metro Manila, Philippines</p>
+        <p><i class="far fa-envelope"></i> greniel.galinato@gmail.com</p>
+        <p><i class="far fa-clock"></i> Available anytime</p>
+      </div>
+      <div>
+        <h4>My social media</h4>
+        <span class="nav__social">
+          <a href="https://codepen.io/" target="_blank" rel="noopener" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+          <a href="mailto:greniel.galinato@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </span>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <div class="container">&copy; 2021 Greniel Galinato. All rights reserved.</div>
+    </div>
+    <a href="#home" class="to-top" id="toTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+  </footer>
+
+  <!-- lightbox for every image with data-full -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox__box" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox__btn lightbox__close" id="lbClose" aria-label="Close"><i class="fas fa-times"></i></button>
+      <button class="lightbox__btn lightbox__prev" id="lbPrev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+      <figure>
+        <img id="lbImg" alt="">
+        <figcaption id="lbCaption"></figcaption>
+      </figure>
+      <button class="lightbox__btn lightbox__next" id="lbNext" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
